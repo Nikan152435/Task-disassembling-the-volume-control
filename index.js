@@ -38,28 +38,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Решение эксперта
 
-// Находим кнопки
-const volumeUpBtn = document.querySelector('.volume-up');
-const volumeDownBtn = document.querySelector('.volume-down');
-// Собираем в псевдомассив все прямоугольники
-const volumeRects = document.querySelectorAll('.volume-rect');
-// Находим индикатор громкости
-const indicator = document.querySelector('.indicator');
+// // Находим кнопки
+// const volumeUpBtn = document.querySelector('.volume-up');
+// const volumeDownBtn = document.querySelector('.volume-down');
+// // Собираем в псевдомассив все прямоугольники
+// const volumeRects = document.querySelectorAll('.volume-rect');
+// // Находим индикатор громкости
+// const indicator = document.querySelector('.indicator');
 
-// Задаем начальное значение громкости
-let currentIndex = 0;
+// // Задаем начальное значение громкости
+// let currentIndex = 0;
 
-// Навешиваем обработчики
-volumeUpBtn.addEventListener('click', () => {
-    if (currentIndex > volumeRects.length - 1) return;
-    volumeRects[currentIndex].classList.add('volume-rect__active');
-    currentIndex++;
-    indicator.textContent++;
-});
+// // Навешиваем обработчики
+// volumeUpBtn.addEventListener('click', () => {
+//     if (currentIndex > volumeRects.length - 1) return;
+//     volumeRects[currentIndex].classList.add('volume-rect__active');
+//     currentIndex++;
+//     indicator.textContent++;
+// });
 
-volumeDownBtn.addEventListener('click', () => {
-    if (!currentIndex) return;
-    currentIndex--;
-    indicator.textContent--;
-    volumeRects[currentIndex].classList.remove('volume-rect__active');
-});
+// volumeDownBtn.addEventListener('click', () => {
+//     if (!currentIndex) return;
+//     currentIndex--;
+//     indicator.textContent--;
+//     volumeRects[currentIndex].classList.remove('volume-rect__active');
+// });
